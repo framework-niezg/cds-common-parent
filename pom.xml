@@ -87,7 +87,7 @@
             <dependency>
                 <groupId>org.apache.metamodel</groupId>
                 <artifactId>MetaModel-full</artifactId>
-                <version>5.0-RC3</version>
+                <version>5.1.0-RC1</version>
                 <exclusions>
                     <exclusion>
                         <groupId>org.apache.metamodel</groupId>
@@ -266,13 +266,26 @@
                 <version>1.0-SNAPSHOT</version>
             </dependency>
 
+            <dependency>
+                <groupId>com.zjcds.common</groupId>
+                <artifactId>cds-datastore</artifactId>
+                <version>1.0-SNAPSHOT</version>
+            </dependency>
+
         </dependencies>
     </dependencyManagement>
     <build>
+        <pluginManagement>
+            <plugins>
+                <plugin>
+                    <artifactId>maven-source-plugin</artifactId>
+                    <version>3.0.1</version>
+                </plugin>
+            </plugins>
+        </pluginManagement>
         <plugins>
             <plugin>
                 <artifactId>maven-source-plugin</artifactId>
-                <version>3.0.1</version>
                 <configuration>
                     <attach>true</attach>
                 </configuration>
