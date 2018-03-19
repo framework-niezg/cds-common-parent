@@ -4,7 +4,7 @@
 
     <groupId>com.zjcds.common</groupId>
     <artifactId>cds-common-parent</artifactId>
-    <version>1.5-SNAPSHOT</version>
+    <version>1.4-SNAPSHOT</version>
     <packaging>pom</packaging>
 
     <properties>
